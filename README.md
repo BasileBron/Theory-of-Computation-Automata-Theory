@@ -17,11 +17,19 @@ A Finite State Automata is a simple machine with a finite number of state.
 ## Conversion of NFA to DFA
 **Every DFA is an NFA, but not vice versa.**
 **But there is an equivalent DFA for every NFA.**
+
 Because :
 ![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/Dell_NFA_andDFA.PNG)
 
-To convert an NFA to a DFA you basically just have to add the dead state. like so:
+- Example 1.
 ![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/Convertion_NFA_to_DFA.PNG)
+To convert this NFA to a DFA you basically just have to add the dead state. like so.
+
+- Example 2
+![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/conv_ex2.PNG)![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/conv_ex2_1.PNG)
+To convert this NFA to a DFA you have tu "cheat" by adding a state that stand for the equivalent of the multiple state of the NFA.
+
+- Example 3
 
 [Full explanation](https://www.youtube.com/watch?v=--CSVsFIDng&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=15)
 
