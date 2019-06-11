@@ -13,7 +13,14 @@ A Finite State Automata is a simple machine with a finite number of state.
 
 ![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/FSA_Map.PNG)
 ## DFA Deterministic Finite Automaton
+It is a **finite-state machine** that accepts or rejects strings of symbols and only **produces a unique computation** (or run) of the automaton for each input string. Deterministic refers to the uniqueness of the computation.
+
 ## NFA Non-deterministic Finite Automaton
+Every DFA is also an NFA. It is because NFA are more flexible than DFA. here are the differences:
+- given the current state there could be multiple next states.
+- The next state may be chosen at random
+- All the next states may be chosen in parallel.
+[source](https://www.youtube.com/watch?v=ehy0jGIYRtE&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=10)
 ## Conversion of NFA to DFA
 **Every DFA is an NFA, but not vice versa.**
 **But there is an equivalent DFA for every NFA.**
