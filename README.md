@@ -33,12 +33,48 @@ Because :
 To convert this NFA to a DFA you basically just have to add the dead state. like so.
 
 - Example 2
-![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/conv_ex2.PNG)![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/conv_ex2_1.PNG)
-To convert this NFA to a DFA you have tu "cheat" by adding a state that stand for the equivalent of the multiple state of the NFA.
+![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/conv.PNG)![map final state automata](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/conv21.PNG)
+To convert this NFA to a DFA you have to "cheat" by adding a state that stand for the equivalent of the multiple state of the NFA.
 
 - Example 3
 
 [Full explanation](https://www.youtube.com/watch?v=--CSVsFIDng&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=15)
+## Minimization of DFA
+Minimization of DFA is required to obtain the minimal version of any DFA which consists of the minimum number of states possible.
+
+e.g a DFA with 4 states is more optimized that the same one with 5 states.
+
+### States equivalence
+States that are equivalent can be reduced to one state. But what does equivalent means exactly?
+In essence :
+![equivalent](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/equivalence.PNG)
+It is still quit vague, here is a more practical explanation.
+
+First of all there is multiple level/type of equivalence i.e **0 equivalence, 1 equivalence, 2 equivalence ...**
+![equivalence](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/equ.PNG)
+To find equivalent states we need to compare them for every possible input.
+
+0 equivalence is the base that we use
+it is composed of:
+- one set with all the non-final-state(s)
+- one set that all the final state(s)
+
+1,2,3... equivalence have multiple set as well, The set that have multiples states are considered **x** equivalent where **x** is the level/type of the equivalence:
+
+How to compare exactly ?
+- Two states are equivalent if for input X state A and B have the **same output** or **any of the output** that is not part of the set of the previous equivalence.
+
+When are we finished ?
+- In the previous picture you can see that 2 and 3 equivalence are the same.
+We can then conclude that it is possible to merge A and C in the state AC.
+
+Here is the optimized version of the previous DFA.
+![Minimized DFA](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/minimized_DFA.PNG)
+
+What if there is an unreachable state?
+- Just delete the given state and do the minimization as usual.
+
+[full explanation and multiple example  here](https://www.youtube.com/watch?v=hOzc4BUIXRk&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=20)
 
 ## Acknowledgement
 Huge thank to [Neso Academy](https://www.youtube.com/channel/UCQYMhOMi_Cdj1CEAU-fv80A) for this amazing [playlist](https://www.youtube.com/watch?v=58N2N7zJGrQ&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=1).
