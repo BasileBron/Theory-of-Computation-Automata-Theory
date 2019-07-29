@@ -103,14 +103,15 @@ Eg. if there was an incoming transition from some other states (let's call them 
 
 
 ## FA With output
-
 ### Moore machine
 the output is dependent on the state and the input.
-![Moore machine](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/moore.PNG)
+
+![Moore machine](/img/moore.PNG)
 
 ### Mealy Machine
 The only difference from the Moore machine is that the output is only dependent on the state.
-![Mealy machine](https://raw.githubusercontent.com/BasileBron/Theory-of-Computation-Automata-Theory/master/img/mealy.PNG)
+
+![Mealy machine](/img/mealy.PNG)
 
 ## Acknowledgement
 Huge thank to [Neso Academy](https://www.youtube.com/channel/UCQYMhOMi_Cdj1CEAU-fv80A) for this amazing [playlist](https://www.youtube.com/watch?v=58N2N7zJGrQ&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=1).
