@@ -104,10 +104,12 @@ Eg. if there was an incoming transition from some other states (let's call them 
 
 ## FA With output
 ### Moore machine
+With the moore machine it is not a matter of ending in a final state since every state can have an output. You can print something in every state.
+
 the output is dependent on the state and the input.
 
 ![Moore machine](/img/moore.PNG)
-
+[]( )
 ### Mealy Machine
 The only difference from the Moore machine is that the output is only dependent on the state.
 
