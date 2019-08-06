@@ -109,11 +109,19 @@ With the moore machine it is not a matter of ending in a final state since every
 the output is dependent on the state and the input.
 
 ![Moore machine](/img/moore.PNG)
-[]( )
+[]()
+
 ### Mealy Machine
 The only difference from the Moore machine is that the output is only dependent on the state.
 
 ![Mealy machine](/img/mealy.PNG)
+
+###Regular expression
+(Regular expression cheat sheet)[https://gist.github.com/vitorbritto/9ff58ef998100b8f19a0]
+
+### Arden's THEOREM
+?
+
 
 ## Acknowledgement
 Huge thank to [Neso Academy](https://www.youtube.com/channel/UCQYMhOMi_Cdj1CEAU-fv80A) for this amazing [playlist](https://www.youtube.com/watch?v=58N2N7zJGrQ&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev&index=1).
