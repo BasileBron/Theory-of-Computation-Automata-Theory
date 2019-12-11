@@ -127,7 +127,7 @@ The only difference from the Moore machine is that the output is only dependent 
 Accepting computation
 - Must be in a final state
 - The input must have been consumed
-- The pushdown must be empty
+- The pushdown must be empty 
 
 ![](assets/README-b308a615.png)
 
